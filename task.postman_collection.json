@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "8ea53ff8-5927-4153-b61f-cb06f1e1a89a",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33338747"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sayed\",\r\n    \"email\":\"am@gmail.com\",\r\n    \"password\":\"Ahme23@!\"  ,\r\n      \"rePassword\":\"Ahme23@!\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/users/signUp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"date\":\"1/3/2026\",\r\n    \"capacity\":2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/events",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"date\":\"1/3/2026\",\r\n    \"capacity\":2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/booking/68346f6ce1829520d5d6adff/6833c9045853902704e4d331",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"68346f6ce1829520d5d6adff",
+						"6833c9045853902704e4d331"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bookings for event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"date\":\"1/3/2026\",\r\n    \"capacity\":2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/booking/event/6833c9045853902704e4d331",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"event",
+						"6833c9045853902704e4d331"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get events by user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ahmed\",\r\n    \"date\":\"1/3/2026\",\r\n    \"capacity\":2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/booking/user/68346cf83af39fea96821d2f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"user",
+						"68346cf83af39fea96821d2f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
